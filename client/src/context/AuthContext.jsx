@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
     fetchUser();
   }, []);
   
-  const isLoaded = !loading && !error;
+  const isLoaded = !loading;
   
   return (
     <AuthContext.Provider value={{ user, loading, error, setUser, isLoaded }}>
